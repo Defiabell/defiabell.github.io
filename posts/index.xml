@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Defiabell 的个人博客</title>
+    <link>https://defiabell.github.io/posts/</link>
+    <description>Recent content in Posts on Defiabell 的个人博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 10 Dec 2023 11:49:04 +0800</lastBuildDate><atom:link href="https://defiabell.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poor Charlie&#39;s Almanack</title>
+      <link>https://defiabell.github.io/posts/reading/poor-charlies-almanack/</link>
+      <pubDate>Sun, 10 Dec 2023 11:49:04 +0800</pubDate>
+      
+      <guid>https://defiabell.github.io/posts/reading/poor-charlies-almanack/</guid>
+      
+      <description>穷查理宝典 缅怀 查理·芒格。 直到老先生去世，鄙人才开始翻开这本书，惭愧惭愧。</description>
+      
+    </item>
+    
+    <item>
+      <title>Self Control</title>
+      <link>https://defiabell.github.io/posts/essay/self-control/</link>
+      <pubDate>Tue, 05 Dec 2023 23:18:14 +0800</pubDate>
+      
+      <guid>https://defiabell.github.io/posts/essay/self-control/</guid>
+      
+      <description>自控力 最近迷上了一款叫月圆之夜的游戏，其实很早之前就玩过，几乎通关（因为有些角色需要花钱买）。然后大概几个月前，闲的无聊，记起了这个游戏，然后下载下来想要消磨消磨时间，没想到这一消磨就是好几个月。 月圆之夜开始是个单机卡牌游戏，游戏设计很有情怀。这类游戏开始对我的吸引主要是完成成就。我对游戏有很强的收集欲，为了达成所有的成就，花在上面的时间少说有几百小时了。然后这次下载后发现居然更新了（常年不更新），出了联机pvp模式。类似炉石的模式。感觉这也切中了我的爽点，无尽的卡牌搭配，凭手气抽牌，丰富的开局技能。每局游戏或牌没成型就被打死，或成型后意犹未尽的爽点都让人欲罢不能。 最近几个月，开始的时候是每到周末就要下载下来肝上两天，周日在满满的负罪感中卸载，然后下个周末又忍不住下载回来。然后最近几天竟然控制不住的每天下班就想玩会，玩几局再卸载，如此循环往复，深感痛苦。
+游戏、短视频等这些快节奏的享受会让人上瘾。瘾真的很可怕，会扎根的，瘾外人觉得克制很容易，但像毒品一样，没个超强的意志或者强制的监管，真的很难控制住自己。</description>
+      
+    </item>
+    
+    <item>
+      <title>搭建个人博客</title>
+      <link>https://defiabell.github.io/posts/technology/build-blog-by-hugo/</link>
+      <pubDate>Sat, 02 Dec 2023 18:56:37 +0800</pubDate>
+      
+      <guid>https://defiabell.github.io/posts/technology/build-blog-by-hugo/</guid>
+      
+      <description>搭建个人博客 遇到的问题：hugo server 命令启动的服务显示 page not found。查询发现说没有配置 theme，但我确实有在 config.toml 配置了 theme 参数。然后使用命令 hugo server -t Blogpaper 启动后发现是有界面的。 问题2: hugo 命令执行后没有生成对应的静态页面。
+后来意识到我的 hugo 是很早之前就安装了，到现在已有半年之久了，版本更新可能带了一些不一样的变化，所以尝试更新到最新版试试。
+升级 hugo 版本后重新执行 hugo 命令，但 content 目录下创建的文件还是没有生成。 经过多次尝试，发现居然是命名问题，默认content文件夹下生成的 index.md 该名为 _index.md，然后重新生成一下就好了</description>
+      
+    </item>
+    
+  </channel>
+</rss>
