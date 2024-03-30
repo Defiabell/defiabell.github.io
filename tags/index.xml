@@ -5,6 +5,7 @@
     <link>https://defiabell.github.io/tags/</link>
     <description>Recent content in Tags on Defiabell 的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language><atom:link href="https://defiabell.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-CN</language>
+    <atom:link href="https://defiabell.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
