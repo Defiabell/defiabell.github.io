@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-    <title>About : Defiabell 的个人博客</title>
+    <title>搭建个人博客 : Defiabell 的个人博客</title>
     <meta charset="utf-8">
     <meta name="description" content="探索世界" />
     <meta name="dc.relation" content="https://defiabell.github.io/" />
@@ -55,37 +55,33 @@
   <div class="section">
     <div class="columns">
       <div class="column">
+        <figure class="image ">
+          
+        </figure>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
         <div class="content">
-          <p class="title is-3"><i class="fas fa-user"></i>
-            About
-          </p>
-            <h2 id="defiabell-的个人博客">Defiabell 的个人博客</h2>
-<p>个人介绍：97年山东人，本科毕业于东北大学物联网工程专业。</p>
-<h3 id="工作经历">工作经历</h3>
-<ul>
-<li>2018 ～ 2021：北森 后端开发工程师
-<ul>
-<li>Account 体系开发，Paas 平台开发</li>
-<li>C#</li>
-</ul>
-</li>
-<li>2021 ～ Now：太极图形 后端工程师
-<ul>
-<li><a href="https://dianshiapp.com/">点石</a>（Taitopia）开发；<a href="https://www.meshy.ai/">Meshy</a> 开发</li>
-<li>Golang, Python, React, Kubernetes</li>
-</ul>
-</li>
-</ul>
-<h3 id="联系方式">联系方式</h3>
-<ul>
-<li>Github ID <a href="https://linkedin.com/in/yourlinkedinprofile">Defiabell</a></li>
-<li>个人微信：@Defiabell_jk</li>
-</ul>
-<h3 id="友情链接">友情链接</h3>
-<ul>
-<li><a href="https://ma-yidong.com/about/">maajor | Ma Yidong</a></li>
-<li><a href="https://rexwang.cc/">Rex Wang</a></li>
-</ul>
+          <h1 class="title is-3">搭建个人博客</h1>
+          <h2 class="subtitle is-5"><time>December 2, 2023</time></h2>
+          <p class="subtitle is-4"></p>
+          <h1 id="起因">起因</h1>
+<p>老大一直有关注我的个人 IP 建设。作为一个技术方向的后端工程师，以架构师为目标的职业路线还是要尽早建设自己的个人 IP。</p>
+<p>工作了五年多，焦虑在逐渐加重，终于在今天（2024.03.29）再次捡起个人博客。</p>
+<h2 id="遇到的问题">遇到的问题</h2>
+<p>问题1：hugo server 命令启动的服务显示 page not found。</p>
+<blockquote>
+<p>查询发现说没有配置 theme，但我确实有在 config.toml 配置了 theme 参数。然后使用命令 hugo server -t Blogpaper 启动后发现是有界面的。</p>
+</blockquote>
+<p>问题2：hugo 命令执行后没有生成对应的静态页面。</p>
+<blockquote>
+<p>后来意识到我的 hugo 是很早之前就安装了，到现在已有半年之久了，版本更新可能带了一些不一样的变化，所以尝试更新到最新版试试。</p>
+</blockquote>
+<blockquote>
+<p>升级 hugo 版本后重新执行 hugo 命令，但 content 目录下创建的文件还是没有生成。
+经过多次尝试，发现居然是命名问题，默认content文件夹下生成的 index.md 改为 _index.md，然后重新生成一下就好了</p>
+</blockquote>
 
         </div>
       </div>
