@@ -1,104 +1,273 @@
 <!DOCTYPE html>
-<html><head>
-    <title>Articles : Defiabell 的个人博客</title>
-    <meta charset="utf-8">
-    <meta name="description" content="探索世界" />
-    <meta name="dc.relation" content="https://defiabell.github.io/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
     
-    
-    <link rel="stylesheet" href="https://defiabell.github.io/style.min.d3da666ed9ed68d7ddcd192b882d21db9631617388ce5c8d8d37f54862ccd8ff.css" integrity="sha256-09pmbtntaNfdzRkriC0h25YxYXOIzlyNjTf1SGLM2P8=">
+  <title> | Defiabell 的个人博客</title><meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=""/>
+
+  <meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://defiabell.github.io/posts/" />
 
 
-    
-    
-    <link rel="stylesheet" href="https://defiabell.github.io/style.min.1f9f55561f84d16b2741033325db3a786d51d0abd48e8189c111941bf5cb94f5.css" integrity="sha256-H59VVh&#43;E0WsnQQMzJds6eG1R0KvUjoGJwRGUG/XLlPU=">
+  <link rel="stylesheet" href="/css/bootstrap.min.css"  crossorigin="anonymous">
+  
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/sass/main.css">
+
+  <link rel="stylesheet" href="/zoomjs/zoom.min.css">
+
+  <script src=/js/lazysizes.min.js></script>
+
+  <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="Defiabell 的个人博客" />
+  
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/logo.svg" sizes="any" type="image/svg+xml" />
+
+
+</head>
 
 
 
+<body ontouchstart="">
+  <nav class="navbar navbar-default navbar-custom navbar-fixed-top invert">
+  <div class="container-fluid">
     
-    
-    <link rel="stylesheet" href="/assets/css/extra.css" media="screen">
-    
-    
-    <script src="https://kit.fontawesome.com/7284380013.js" crossorigin="anonymous"></script>
-    
-
-    <script src="/js/bulma.js"></script>
-
-    <link rel="shortcut icon" type="image/x-icon" href="/img/sanya1.jpg">
-</head><body>
-        <div id="container">
-<div class="container">
-<nav class="navbar  mb-4" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item title has-text-black" href="https://defiabell.github.io/">Defiabell 的个人博客</a>
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div id="navbar-menu" class="navbar-menu">
-    <div class="navbar-end">
-        
-        <a class="navbar-item" href="/"  >Home</a>
-        
-        <a class="navbar-item" href="/posts"  >Articles</a>
-        
-        <a class="navbar-item" href="/about/"  >About Me</a>
-        
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://defiabell.github.io/">Defiabell 的个人博客</a>
     </div>
-  </div>
-</nav>
-</div><div class="container">
-                <div id="content">
-<main aria-role="main">
-  <div class="section">
-    <div class="columns">
-      <div class="column">
-        <figure class="image ">
+    
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
           
-        </figure>
+
+          <li class="search-icon">
+            <a href="javascript:void(0)">
+              <i class="fa fa-search"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="columns">
-      <div class="column">
-        <div class="content">
-          <h1 class="title is-3">Articles</h1>
-          <h2 class="subtitle is-5"><time>March 30, 2024</time></h2>
-          <p class="subtitle is-4"></p>
-          <p><a href="./reading/Poor-Charlies-Almanack.md">《穷查理宝典》读后感</a></p>
+    
+  </div>
+  
+</nav>
+<script>
+  
+  
+  
+  var $body = document.body;
+  var $toggle = document.querySelector(".navbar-toggle");
+  var $navbar = document.querySelector("#huxblog_navbar");
+  var $collapse = document.querySelector(".navbar-collapse");
 
+  var __HuxNav__ = {
+    close: function () {
+      $navbar.className = " ";
+      
+      setTimeout(function () {
+        
+        if ($navbar.className.indexOf("in") < 0) {
+          $collapse.style.height = "0px";
+        }
+      }, 400);
+    },
+    open: function () {
+      $collapse.style.height = "auto";
+      $navbar.className += " in";
+    },
+  };
+
+  
+  $toggle.addEventListener("click", function (e) {
+    if ($navbar.className.indexOf("in") > 0) {
+      __HuxNav__.close();
+    } else {
+      __HuxNav__.open();
+    }
+  });
+
+  
+
+  document.addEventListener("click", function (e) {
+    if (e.target == $toggle) return;
+    if (e.target.className == "icon-bar") return;
+    __HuxNav__.close();
+  });
+</script>
+  
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  
+
+
+
+<header class="intro-header style-text">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="site-heading">
+        
+          <h1>Defiabell 的个人博客</h1>
+          
+          
+          <span class="subheading"></span>
         </div>
       </div>
     </div>
   </div>
-</main>
+</header>
 
-                </div>
-            </div><footer class="footer">
-  <div class="has-text-centered">
-    <layer>
+
+  
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       
+      <div class="mini-post-list">
         
-          
-          <a class="footer-social" href="https://github.com/Defiabell"><i class='fab fa-github fa-lg'></i></a>
-          
-          <a class="footer-social" href="https://twitter.com/_jk_sun"><i class='fab fa-twitter fa-lg'></i></a>
-          
+
+        <section class="">
+          <span class="fa listing-seperator">
+            <span class="tag-text">2024</span></span>
+            
+            <div class="post-preview item" data-tags="">
+  <a href="/posts/reading/">
+      <h2 class="post-title"></h2>
+      <h3 class="post-subtitle"></h3>
+  </a>
+<hr>
+</div>
+            
+        </section>
         
-      
-    </layer>
-    <layer>
-      <p>
+
+        <section class="">
+          <span class="fa listing-seperator">
+            <span class="tag-text">2023</span></span>
+            
+            <div class="post-preview item" data-tags="%E6%8A%80%E6%9C%AF,%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2">
+  <a href="/posts/technology/build-blog-by-hugo/">
+      <h2 class="post-title">搭建个人博客</h2>
+      <h3 class="post-subtitle"></h3>
+  </a>
+<hr>
+</div>
+            
+        </section>
         
-        
-      </p>
-      <p>
-         &copy; 2024 Defiabell
-      </p>
-    </layer>
+      </div>
+
+    </div>
   </div>
-</footer></div></body>
+</div>
+
+
+
+  
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <ul class="list-inline text-center">
+
+<li>
+  <a href="https://github.com/Defiabell" target="_blank">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
+</li>
+
+<li>
+  <a href="mailto:defiabell@gmail.com">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
+</li></ul>
+
+        <p class="copyright text-muted">
+          Copyright &copy; Defiabell 的个人博客 2024  
+          <br>
+          Powered by <a href="https://gohugo.io">Hugo</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src=/js/jquery.min.js></script>
+<script src=/js/bootstrap.min.js crossorigin="anonymous"></script>
+
+
+
+<script src="/js/hux-blog.min.c4ea77041cd3edbfc8b2622cd887a9a5d8760a4162d14489e36d2a3fa4c90172.js"></script>
+
+
+<script src=/js/simple-jekyll-search.min.js></script>
+
+
+<script src="/js/search.min.53bce5da475b4d362500e5ce5dddfa22e20e1b9018777411d2020b4b839c9310.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/zoomjs/zoom.min.js"></script>
+
+</body>
+
 </html>

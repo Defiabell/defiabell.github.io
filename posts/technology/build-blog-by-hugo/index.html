@@ -1,109 +1,353 @@
 <!DOCTYPE html>
-<html><head>
-    <title>搭建个人博客 : Defiabell 的个人博客</title>
-    <meta charset="utf-8">
-    <meta name="description" content="探索世界" />
-    <meta name="dc.relation" content="https://defiabell.github.io/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
     
-    
-    <link rel="stylesheet" href="https://defiabell.github.io/style.min.d3da666ed9ed68d7ddcd192b882d21db9631617388ce5c8d8d37f54862ccd8ff.css" integrity="sha256-09pmbtntaNfdzRkriC0h25YxYXOIzlyNjTf1SGLM2P8=">
+  <title>搭建个人博客 | Defiabell 的个人博客</title><meta name="description" content="起因老大一直有关注我的个人 IP 建设。作为一个技术方向的后端工程师，以架构师为目标的职业路线还是要尽早建设自己的个人 IP。
+工作了五年多，焦虑在逐渐加重，终于在今天（2024.03.29）再次捡起个人博客。
+遇到的问题问题1：hugo server 命令启动的服务显示 page not found。
+查询发现说没有配置 theme，但我确实有在 config.toml 配置了 theme 参数。然后使用命令 hugo server -t Blogpaper 启动后发现是有界面的。
+问题2：hugo 命令执行后没有生成对应的静态页面。
+后来意识到我的 hugo 是很早之前就安装了，到现在已有半年之久了，版本更新可能带了一些不一样的变化，所以尝试更新到最新版试试。
+升级 hugo 版本后重新执行 hugo 命令，但 content 目录下创建的文件还是没有生成。 经过多次尝试，发现居然是命名问题，默认content文件夹下生成的 index.md 改为 _index.md，然后重新生成一下就好了">
+  <meta name="keywords" content="">
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="搭建个人博客"/>
+<meta name="twitter:description" content="起因老大一直有关注我的个人 IP 建设。作为一个技术方向的后端工程师，以架构师为目标的职业路线还是要尽早建设自己的个人 IP。
+工作了五年多，焦虑在逐渐加重，终于在今天（2024.03.29）再次捡起个人博客。
+遇到的问题问题1：hugo server 命令启动的服务显示 page not found。
+查询发现说没有配置 theme，但我确实有在 config.toml 配置了 theme 参数。然后使用命令 hugo server -t Blogpaper 启动后发现是有界面的。
+问题2：hugo 命令执行后没有生成对应的静态页面。
+后来意识到我的 hugo 是很早之前就安装了，到现在已有半年之久了，版本更新可能带了一些不一样的变化，所以尝试更新到最新版试试。
+升级 hugo 版本后重新执行 hugo 命令，但 content 目录下创建的文件还是没有生成。 经过多次尝试，发现居然是命名问题，默认content文件夹下生成的 index.md 改为 _index.md，然后重新生成一下就好了"/>
+
+  <meta property="og:title" content="搭建个人博客" />
+<meta property="og:description" content="起因老大一直有关注我的个人 IP 建设。作为一个技术方向的后端工程师，以架构师为目标的职业路线还是要尽早建设自己的个人 IP。
+工作了五年多，焦虑在逐渐加重，终于在今天（2024.03.29）再次捡起个人博客。
+遇到的问题问题1：hugo server 命令启动的服务显示 page not found。
+查询发现说没有配置 theme，但我确实有在 config.toml 配置了 theme 参数。然后使用命令 hugo server -t Blogpaper 启动后发现是有界面的。
+问题2：hugo 命令执行后没有生成对应的静态页面。
+后来意识到我的 hugo 是很早之前就安装了，到现在已有半年之久了，版本更新可能带了一些不一样的变化，所以尝试更新到最新版试试。
+升级 hugo 版本后重新执行 hugo 命令，但 content 目录下创建的文件还是没有生成。 经过多次尝试，发现居然是命名问题，默认content文件夹下生成的 index.md 改为 _index.md，然后重新生成一下就好了" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://defiabell.github.io/posts/technology/build-blog-by-hugo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-02T18:56:37+08:00" />
+<meta property="article:modified_time" content="2023-12-02T18:56:37+08:00" />
 
 
-    
-    
-    <link rel="stylesheet" href="https://defiabell.github.io/style.min.1f9f55561f84d16b2741033325db3a786d51d0abd48e8189c111941bf5cb94f5.css" integrity="sha256-H59VVh&#43;E0WsnQQMzJds6eG1R0KvUjoGJwRGUG/XLlPU=">
+  <link rel="stylesheet" href="/css/bootstrap.min.css"  crossorigin="anonymous">
+  
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/sass/main.css">
+
+  <link rel="stylesheet" href="/zoomjs/zoom.min.css">
+
+  <script src=/js/lazysizes.min.js></script>
+
+  
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/logo.svg" sizes="any" type="image/svg+xml" />
+
+
+</head>
 
 
 
+<body ontouchstart="">
+  <nav class="navbar navbar-default navbar-custom navbar-fixed-top invert">
+  <div class="container-fluid">
     
-    
-    <link rel="stylesheet" href="/assets/css/extra.css" media="screen">
-    
-    
-    <script src="https://kit.fontawesome.com/7284380013.js" crossorigin="anonymous"></script>
-    
-
-    <script src="/js/bulma.js"></script>
-
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-</head><body>
-        <div id="container">
-<div class="container">
-<nav class="navbar  mb-4" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item title has-text-black" href="https://defiabell.github.io/">Defiabell 的个人博客</a>
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div id="navbar-menu" class="navbar-menu">
-    <div class="navbar-end">
-        
-        <a class="navbar-item" href="/"  >Home</a>
-        
-        <a class="navbar-item" href="/archive/"  >Archive</a>
-        
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://defiabell.github.io/">Defiabell 的个人博客</a>
     </div>
-  </div>
-</nav>
-</div><div class="container">
-                <div id="content">
-<main aria-role="main">
-  <div class="section">
-    <div class="columns">
-      <div class="column">
-        <figure class="image ">
+    
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
           
-        </figure>
+
+          <li class="search-icon">
+            <a href="javascript:void(0)">
+              <i class="fa fa-search"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="columns">
-      <div class="column">
-        <div class="content">
-          <h1 class="title is-3">搭建个人博客</h1>
-          <h2 class="subtitle is-5"><time>December 2, 2023</time></h2>
-          <p class="subtitle is-4"></p>
-          <h1 id="搭建个人博客">搭建个人博客</h1>
-<p>遇到的问题：hugo server 命令启动的服务显示 page not found。查询发现说没有配置 theme，但我确实有在 config.toml 配置了 theme 参数。然后使用命令 hugo server -t Blogpaper 启动后发现是有界面的。
-问题2: hugo 命令执行后没有生成对应的静态页面。</p>
-<p>后来意识到我的 hugo 是很早之前就安装了，到现在已有半年之久了，版本更新可能带了一些不一样的变化，所以尝试更新到最新版试试。</p>
-<p>升级 hugo 版本后重新执行 hugo 命令，但 content 目录下创建的文件还是没有生成。
-经过多次尝试，发现居然是命名问题，默认content文件夹下生成的 index.md 该名为 _index.md，然后重新生成一下就好了</p>
+    
+  </div>
+  
+</nav>
+<script>
+  
+  
+  
+  var $body = document.body;
+  var $toggle = document.querySelector(".navbar-toggle");
+  var $navbar = document.querySelector("#huxblog_navbar");
+  var $collapse = document.querySelector(".navbar-collapse");
 
+  var __HuxNav__ = {
+    close: function () {
+      $navbar.className = " ";
+      
+      setTimeout(function () {
+        
+        if ($navbar.className.indexOf("in") < 0) {
+          $collapse.style.height = "0px";
+        }
+      }, 400);
+    },
+    open: function () {
+      $collapse.style.height = "auto";
+      $navbar.className += " in";
+    },
+  };
+
+  
+  $toggle.addEventListener("click", function (e) {
+    if ($navbar.className.indexOf("in") > 0) {
+      __HuxNav__.close();
+    } else {
+      __HuxNav__.open();
+    }
+  });
+
+  
+
+  document.addEventListener("click", function (e) {
+    if (e.target == $toggle) return;
+    if (e.target.className == "icon-bar") return;
+    __HuxNav__.close();
+  });
+</script>
+  
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  
+
+
+<style type="text/css">
+  header.intro-header {
+    position: relative;
+    background-image: url('');
+  }
+</style>
+
+<header class="intro-header style-text">
+
+  <div class="header-mask"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <div class="tags">
+            
+            <a class="tag" href="/tags/%E6%8A%80%E6%9C%AF/" title="技术">技术</a>
+            
+            <a class="tag" href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="个人博客">个人博客</a>
+            
+          </div>
+          <h1>搭建个人博客</h1>
+          <h2 class="subheading"></h2>
+          <span class="meta">
+            Posted by   
+            on Sat, Dec 2, 2023
+          </span>
         </div>
       </div>
     </div>
   </div>
-</main>
+</header>
 
-                </div>
-            </div><footer class="footer">
-  <div class="has-text-centered">
-    <layer>
+
+  
+
+
+<article>
+  <div class="container">
+    <div class="row">
+
       
+      <div class="
+              col-lg-8 col-lg-offset-2
+              col-md-10 col-md-offset-1
+              post-container">
+        <h1 id="起因">起因<a class="anchorjs-link" href="#%e8%b5%b7%e5%9b%a0"></a></h1><p>老大一直有关注我的个人 IP 建设。作为一个技术方向的后端工程师，以架构师为目标的职业路线还是要尽早建设自己的个人 IP。</p>
+<p>工作了五年多，焦虑在逐渐加重，终于在今天（2024.03.29）再次捡起个人博客。</p>
+<h2 id="遇到的问题">遇到的问题<a class="anchorjs-link" href="#%e9%81%87%e5%88%b0%e7%9a%84%e9%97%ae%e9%a2%98"></a></h2><p>问题1：hugo server 命令启动的服务显示 page not found。</p>
+<blockquote>
+<p>查询发现说没有配置 theme，但我确实有在 config.toml 配置了 theme 参数。然后使用命令 hugo server -t Blogpaper 启动后发现是有界面的。</p>
+</blockquote>
+<p>问题2：hugo 命令执行后没有生成对应的静态页面。</p>
+<blockquote>
+<p>后来意识到我的 hugo 是很早之前就安装了，到现在已有半年之久了，版本更新可能带了一些不一样的变化，所以尝试更新到最新版试试。</p>
+</blockquote>
+<blockquote>
+<p>升级 hugo 版本后重新执行 hugo 命令，但 content 目录下创建的文件还是没有生成。
+经过多次尝试，发现居然是命名问题，默认content文件夹下生成的 index.md 改为 _index.md，然后重新生成一下就好了</p>
+</blockquote>
+
+
+        <hr style="visibility: hidden;" />
+        <ul class="pager">
+          
+          
+          <li class="next">
+            <a href="/posts/reading/poor-charlies-almanack/" data-toggle="tooltip" data-placement="top" title="《Poor Charlie&#39;s Almanack》">
+              Next<br>
+              <span>《Poor Charlie&#39;s Almanack》</span>
+            </a>
+          </li>
+          
+        </ul>
+        <hr style="visibility: hidden;" />
+
         
-          
-          <a class="footer-social" href="https://linkedin.com/in/yourlinkedinprofile"><i class='fab fa-linkedin fa-lg'></i></a>
-          
-          <a class="footer-social" href="https://github.com/yourgithubname"><i class='fab fa-github fa-lg'></i></a>
-          
-          <a class="footer-social" href="https://twitter.com/yourtwittername"><i class='fab fa-twitter fa-lg'></i></a>
-          
         
+
+
+
+
+
+
+      </div>
+
       
-    </layer>
-    <layer>
-      <p>
+      
+      
+      
+      <div class="
+              col-lg-8 col-lg-offset-2
+              col-md-10 col-md-offset-1
+              sidebar-container">
+
         
-        Website theme is <a class="has-text-weight-semibold" href="http://github.com/alloydwhitlock/huey">Huey</a> by <a class="has-text-weight-semibold" href="https://adamwhitlock.com">Adam Whitlock</a>.
-      </p>
-      <p>
-         &copy; 2024 Defiabell
-      </p>
-    </layer>
+        
+        <section>
+  
+  
+  <hr class="hidden-sm hidden-xs">
+  
+  <h5>FEATURED TAGS</h5>
+  <div class="tags">
+    
+    <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">个人博客</a>
+    
+    <a href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>
+    
+    <a href="/tags/%E7%94%B5%E5%BD%B1/">电影</a>
+    
+    <a href="/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+    
   </div>
-</footer></div></body>
+</section>
+
+        
+        
+
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+  
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <ul class="list-inline text-center">
+
+<li>
+  <a href="https://github.com/Defiabell" target="_blank">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
+</li>
+
+<li>
+  <a href="mailto:defiabell@gmail.com">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
+</li></ul>
+
+        <p class="copyright text-muted">
+          Copyright &copy; Defiabell 的个人博客 2024  
+          <br>
+          Powered by <a href="https://gohugo.io">Hugo</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src=/js/jquery.min.js></script>
+<script src=/js/bootstrap.min.js crossorigin="anonymous"></script>
+
+
+
+<script src="/js/hux-blog.min.c4ea77041cd3edbfc8b2622cd887a9a5d8760a4162d14489e36d2a3fa4c90172.js"></script>
+
+
+<script src=/js/simple-jekyll-search.min.js></script>
+
+
+<script src="/js/search.min.53bce5da475b4d362500e5ce5dddfa22e20e1b9018777411d2020b4b839c9310.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/zoomjs/zoom.min.js"></script>
+
+</body>
+
 </html>
