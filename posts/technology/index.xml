@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>技术 on Defiabell 的个人博客</title>
+        <link>http://localhost:1313/posts/technology/</link>
+        <description>Recent content in 技术 on Defiabell 的个人博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-CN</language>
+        <lastBuildDate>Sat, 02 Dec 2023 18:56:37 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/technology/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>搭建个人博客</title>
+        <link>http://localhost:1313/posts/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+        <pubDate>Sat, 02 Dec 2023 18:56:37 +0800</pubDate>
+        
+        <guid>http://localhost:1313/posts/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;h1 id=&#34;起因&#34;&gt;起因
+&lt;/h1&gt;&lt;p&gt;老大一直有关注我的个人 IP 建设。作为一个技术方向的后端工程师，以架构师为目标的职业路线还是要尽早建设自己的个人 IP。&lt;/p&gt;
+&lt;p&gt;工作了五年多，焦虑在逐渐加重，终于在今天（2024.03.29）再次捡起个人博客。&lt;/p&gt;
+&lt;h2 id=&#34;遇到的问题&#34;&gt;遇到的问题
+&lt;/h2&gt;&lt;p&gt;问题1：hugo server 命令启动的服务显示 page not found。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;查询发现说没有配置 theme，但我确实有在 config.toml 配置了 theme 参数。然后使用命令 hugo server -t Blogpaper 启动后发现是有界面的。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;问题2：hugo 命令执行后没有生成对应的静态页面。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;后来意识到我的 hugo 是很早之前就安装了，到现在已有半年之久了，版本更新可能带了一些不一样的变化，所以尝试更新到最新版试试。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;升级 hugo 版本后重新执行 hugo 命令，但 content 目录下创建的文件还是没有生成。
+经过多次尝试，发现居然是命名问题，默认content文件夹下生成的 index.md 改为 _index.md，然后重新生成一下就好了&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
