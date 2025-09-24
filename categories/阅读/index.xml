@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>阅读 on Defiabell 的个人博客</title>
-        <link>http://localhost:1313/categories/%E9%98%85%E8%AF%BB/</link>
+        <link>https://defiabell.github.io/categories/%E9%98%85%E8%AF%BB/</link>
         <description>Recent content in 阅读 on Defiabell 的个人博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Tue, 16 Apr 2024 23:06:42 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 16 Apr 2024 23:06:42 +0800</lastBuildDate><atom:link href="https://defiabell.github.io/categories/%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>《乔布斯传》读后感</title>
-        <link>http://localhost:1313/posts/%E4%B9%94%E5%B8%83%E6%96%AF%E4%BC%A0%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
+        <link>https://defiabell.github.io/posts/%E4%B9%94%E5%B8%83%E6%96%AF%E4%BC%A0%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
         <pubDate>Tue, 16 Apr 2024 23:06:42 +0800</pubDate>
         
-        <guid>http://localhost:1313/posts/%E4%B9%94%E5%B8%83%E6%96%AF%E4%BC%A0%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
+        <guid>https://defiabell.github.io/posts/%E4%B9%94%E5%B8%83%E6%96%AF%E4%BC%A0%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
         <description>&lt;p&gt;45万字，断断续续用了14个小时读完了。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;阅读完乔帮主的一生，两个截然相反的念头一直充斥脑海：乔布斯怎么能这么渣；乔帮主是神。&lt;/p&gt;
@@ -45,11 +45,11 @@
         </item>
         <item>
         <title>《周处除三害》观后感</title>
-        <link>http://localhost:1313/posts/%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3%E8%A7%82%E5%90%8E%E6%84%9F/</link>
+        <link>https://defiabell.github.io/posts/%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3%E8%A7%82%E5%90%8E%E6%84%9F/</link>
         <pubDate>Fri, 05 Apr 2024 22:06:12 +0800</pubDate>
         
-        <guid>http://localhost:1313/posts/%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3%E8%A7%82%E5%90%8E%E6%84%9F/</guid>
-        <description>&lt;img src="http://localhost:1313/posts/%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3%E8%A7%82%E5%90%8E%E6%84%9F/%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3_%E7%94%B5%E5%BD%B1%E6%B5%B7%E6%8A%A5.jpg" alt="Featured image of post 《周处除三害》观后感" /&gt;&lt;blockquote&gt;
+        <guid>https://defiabell.github.io/posts/%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3%E8%A7%82%E5%90%8E%E6%84%9F/</guid>
+        <description>&lt;img src="https://defiabell.github.io/posts/%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3%E8%A7%82%E5%90%8E%E6%84%9F/%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3_%E7%94%B5%E5%BD%B1%E6%B5%B7%E6%8A%A5.jpg" alt="Featured image of post 《周处除三害》观后感" /&gt;&lt;blockquote&gt;
 &lt;p&gt;本文对影片内容有很多描述，介意剧透请勿阅读&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;《周处除三害》，儿时的回忆突然袭击我的脑海。刚开始看到这个名字的时候还没有意识到是小时候曾经看过的一个故事。好像是小学语文课本上的，当时看还很热血沸腾，最后看到周处自己意识到自己是人们口中的第三害而痛苦时，还很为周处感到不值。&lt;/p&gt;
 &lt;hr&gt;
@@ -116,10 +116,10 @@
         </item>
         <item>
         <title>《Poor Charlie&#39;s Almanack》</title>
-        <link>http://localhost:1313/posts/poor-charlies-almanack/</link>
+        <link>https://defiabell.github.io/posts/poor-charlies-almanack/</link>
         <pubDate>Sun, 10 Dec 2023 11:49:04 +0800</pubDate>
         
-        <guid>http://localhost:1313/posts/poor-charlies-almanack/</guid>
+        <guid>https://defiabell.github.io/posts/poor-charlies-almanack/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;缅怀 查理·芒格。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;之前偶有听起这本书，但直到老先生去世，才开始真正捧起这本书。&lt;/p&gt;
