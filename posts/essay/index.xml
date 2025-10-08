@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>随笔 on Defiabell 的个人博客</title>
-        <link>https://defiabell.github.io/posts/essay/</link>
+        <link>http://localhost:1313/posts/essay/</link>
         <description>Recent content in 随笔 on Defiabell 的个人博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Wed, 01 May 2024 09:15:54 +0800</lastBuildDate><atom:link href="https://defiabell.github.io/posts/essay/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 01 May 2024 09:15:54 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/essay/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>物欲横流的时代坚持心中的白月光</title>
-        <link>https://defiabell.github.io/posts/%E7%89%A9%E6%AC%B2%E6%A8%AA%E6%B5%81%E7%9A%84%E6%97%B6%E4%BB%A3%E5%9D%9A%E6%8C%81%E5%BF%83%E4%B8%AD%E7%9A%84%E7%99%BD%E6%9C%88%E5%85%89/</link>
+        <link>http://localhost:1313/posts/%E7%89%A9%E6%AC%B2%E6%A8%AA%E6%B5%81%E7%9A%84%E6%97%B6%E4%BB%A3%E5%9D%9A%E6%8C%81%E5%BF%83%E4%B8%AD%E7%9A%84%E7%99%BD%E6%9C%88%E5%85%89/</link>
         <pubDate>Wed, 01 May 2024 09:15:54 +0800</pubDate>
         
-        <guid>https://defiabell.github.io/posts/%E7%89%A9%E6%AC%B2%E6%A8%AA%E6%B5%81%E7%9A%84%E6%97%B6%E4%BB%A3%E5%9D%9A%E6%8C%81%E5%BF%83%E4%B8%AD%E7%9A%84%E7%99%BD%E6%9C%88%E5%85%89/</guid>
+        <guid>http://localhost:1313/posts/%E7%89%A9%E6%AC%B2%E6%A8%AA%E6%B5%81%E7%9A%84%E6%97%B6%E4%BB%A3%E5%9D%9A%E6%8C%81%E5%BF%83%E4%B8%AD%E7%9A%84%E7%99%BD%E6%9C%88%E5%85%89/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;2024.04.30 一个自媒体人突然发来一条消息：&lt;/p&gt;&lt;/blockquote&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;所有想做自媒体的，记住！
@@ -34,10 +34,10 @@ xx做自媒体5年，原创总结，40+行业、包括人设、内容、引流�
         </item>
         <item>
         <title>2024南京游</title>
-        <link>https://defiabell.github.io/posts/2024%E5%8D%97%E4%BA%AC%E6%B8%B8/</link>
+        <link>http://localhost:1313/posts/2024%E5%8D%97%E4%BA%AC%E6%B8%B8/</link>
         <pubDate>Mon, 22 Apr 2024 23:25:55 +0800</pubDate>
         
-        <guid>https://defiabell.github.io/posts/2024%E5%8D%97%E4%BA%AC%E6%B8%B8/</guid>
+        <guid>http://localhost:1313/posts/2024%E5%8D%97%E4%BA%AC%E6%B8%B8/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;2024.04.11(周三)&amp;ndash;2024.04.14(周日)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -152,6 +152,19 @@ xx做自媒体5年，原创总结，40+行业、包括人设、内容、引流�
 &lt;/h2&gt;&lt;p&gt;进入红山动物园，再次感慨南京植被之茂盛，感觉动物园是从山林中开辟出来的，不像北京动物园那样平坦光秃的大路，红山动物园的路基本都是有坡度的。进园沿路参观了鸟园，长颈鹿馆，大象馆，河马犀牛馆，考拉馆，猴馆，狐猴馆。长颈鹿好干净好好看，顺滑亮里的毛皮，第一眼看到以为是雕塑。大多动物们的都在吃东西，特别棒的是红山很多动物都是以家庭为单位饲养的。&lt;/p&gt;
 &lt;p&gt;可惜时间较紧，没来得及去猴山和狮虎馆。赶到高铁站，以一份包子和锅贴结束了为期四天的南京之旅。&lt;/p&gt;
 &lt;p&gt;四月的南京太舒服了。清爽的天气，茂盛的树木，整齐的梧桐，惬意。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Self Control</title>
+        <link>http://localhost:1313/posts/self-control/</link>
+        <pubDate>Tue, 05 Dec 2023 23:18:14 +0800</pubDate>
+        
+        <guid>http://localhost:1313/posts/self-control/</guid>
+        <description>&lt;h1 id=&#34;自控力&#34;&gt;自控力
+&lt;/h1&gt;&lt;p&gt;最近迷上了一款叫月圆之夜的游戏，其实很早之前就玩过，几乎通关（因为有些角色需要花钱买）。然后大概几个月前，闲的无聊，记起了这个游戏，然后下载下来想要消磨消磨时间，没想到这一消磨就是好几个月。
+月圆之夜开始是个单机卡牌游戏，游戏设计很有情怀。这类游戏开始对我的吸引主要是完成成就。我对游戏有很强的收集欲，为了达成所有的成就，花在上面的时间少说有几百小时了。然后这次下载后发现居然更新了（常年不更新），出了联机pvp模式。类似炉石的模式。感觉这也切中了我的爽点，无尽的卡牌搭配，凭手气抽牌，丰富的开局技能。每局游戏或牌没成型就被打死，或成型后意犹未尽的爽点都让人欲罢不能。
+最近几个月，开始的时候是每到周末就要下载下来肝上两天，周日在满满的负罪感中卸载，然后下个周末又忍不住下载回来。然后最近几天竟然控制不住的每天下班就想玩会，玩几局再卸载，如此循环往复，深感痛苦。&lt;/p&gt;
+&lt;p&gt;游戏、短视频等这些快节奏的享受会让人上瘾。瘾真的很可怕，会扎根的，瘾外人觉得克制很容易，但像毒品一样，没个超强的意志或者强制的监管，真的很难控制住自己。&lt;/p&gt;
 </description>
         </item>
         

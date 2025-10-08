@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>个人博客 on Defiabell 的个人博客</title>
-        <link>https://defiabell.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+        <link>http://localhost:1313/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
         <description>Recent content in 个人博客 on Defiabell 的个人博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Sat, 02 Dec 2023 18:56:37 +0800</lastBuildDate><atom:link href="https://defiabell.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 02 Dec 2023 18:56:37 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>搭建个人博客</title>
-        <link>https://defiabell.github.io/posts/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+        <link>http://localhost:1313/posts/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Sat, 02 Dec 2023 18:56:37 +0800</pubDate>
         
-        <guid>https://defiabell.github.io/posts/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+        <guid>http://localhost:1313/posts/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
         <description>&lt;h1 id=&#34;起因&#34;&gt;起因
 &lt;/h1&gt;&lt;p&gt;老大一直有关注我的个人 IP 建设。作为一个技术方向的后端工程师，以架构师为目标的职业路线还是要尽早建设自己的个人 IP。&lt;/p&gt;
 &lt;p&gt;工作了五年多，焦虑在逐渐加重，终于在今天（2024.03.29）再次捡起个人博客。&lt;/p&gt;

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>人生大事 on Defiabell 的个人博客</title>
-        <link>https://defiabell.github.io/posts/life/</link>
+        <link>http://localhost:1313/posts/life/</link>
         <description>Recent content in 人生大事 on Defiabell 的个人博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Tue, 23 Sep 2025 23:46:05 +0800</lastBuildDate><atom:link href="https://defiabell.github.io/posts/life/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 23 Sep 2025 23:46:05 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/life/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>考研</title>
-        <link>https://defiabell.github.io/posts/%E8%80%83%E7%A0%94/</link>
+        <link>http://localhost:1313/posts/%E8%80%83%E7%A0%94/</link>
         <pubDate>Tue, 23 Sep 2025 23:46:05 +0800</pubDate>
         
-        <guid>https://defiabell.github.io/posts/%E8%80%83%E7%A0%94/</guid>
+        <guid>http://localhost:1313/posts/%E8%80%83%E7%A0%94/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;过去的两年有两个里程碑事件。&lt;/p&gt;
 &lt;ul&gt;
