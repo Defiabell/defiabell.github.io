@@ -280,6 +280,10 @@
                 技术
             </a>
         
+            <a href="/categories/%E6%91%84%E5%BD%B1/" class="font_size_1">
+                摄影
+            </a>
+        
     </div>
 </section>
 
@@ -317,6 +321,14 @@
                 个人博客
             </a>
         
+            <a href="/tags/%E5%8C%97%E4%BA%AC/" class="font_size_1">
+                北京
+            </a>
+        
+            <a href="/tags/%E5%9B%BD%E5%AD%90%E7%9B%91/" class="font_size_1">
+                国子监
+            </a>
+        
             <a href="/tags/%E6%84%9F%E6%82%9F/" class="font_size_1">
                 感悟
             </a>
@@ -325,20 +337,12 @@
                 技术
             </a>
         
+            <a href="/tags/%E6%91%84%E5%BD%B1/" class="font_size_1">
+                摄影
+            </a>
+        
             <a href="/tags/%E6%97%85%E6%B8%B8/" class="font_size_1">
                 旅游
-            </a>
-        
-            <a href="/tags/%E7%94%B5%E5%BD%B1/" class="font_size_1">
-                电影
-            </a>
-        
-            <a href="/tags/%E7%BB%93%E5%A9%9A/" class="font_size_1">
-                结婚
-            </a>
-        
-            <a href="/tags/%E8%80%81%E5%B9%B4%E4%BA%BA/" class="font_size_1">
-                老年人
             </a>
         
     </div>
@@ -398,7 +402,67 @@
 
 
             </main>
-        </div><script 
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <style>
+             
+            .swiper-gallery-container {
+                margin-bottom: 20px;
+            }
+            .swiper {
+                width: 100%;
+                height: 500px;  
+            }
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;  
+            }
+            .swiper-caption {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 5px 0;
+                text-align: center;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var swiperContainers = document.querySelectorAll('.swiper-gallery-instance');
+                swiperContainers.forEach(function(container, index) {
+                    new Swiper(container, {
+                        loop: true,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: container.querySelector('.swiper-pagination'),
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: container.querySelector('.swiper-button-next'),
+                            prevEl: container.querySelector('.swiper-button-prev'),
+                        },
+                        scrollbar: {
+                            el: container.querySelector('.swiper-scrollbar'),
+                        },
+                    });
+                });
+            });
+        </script>
+        <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >

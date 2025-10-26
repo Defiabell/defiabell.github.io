@@ -191,12 +191,12 @@
         
             
 <article class="">
-    <a href="/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91%E5%88%B0%E5%8C%97%E9%94%A3%E9%BC%93%E5%B7%B7/">
+    <a href="/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">北京国子监到北锣鼓巷</h2>
+            <h2 class="article-title">北京国子监</h2>
         </div>
     </a>
 </article>
@@ -222,7 +222,67 @@
 
 
             </main>
-        </div><script 
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <style>
+             
+            .swiper-gallery-container {
+                margin-bottom: 20px;
+            }
+            .swiper {
+                width: 100%;
+                height: 500px;  
+            }
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;  
+            }
+            .swiper-caption {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 5px 0;
+                text-align: center;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var swiperContainers = document.querySelectorAll('.swiper-gallery-instance');
+                swiperContainers.forEach(function(container, index) {
+                    new Swiper(container, {
+                        loop: true,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: container.querySelector('.swiper-pagination'),
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: container.querySelector('.swiper-button-next'),
+                            prevEl: container.querySelector('.swiper-button-prev'),
+                        },
+                        scrollbar: {
+                            el: container.querySelector('.swiper-scrollbar'),
+                        },
+                    });
+                });
+            });
+        </script>
+        <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
