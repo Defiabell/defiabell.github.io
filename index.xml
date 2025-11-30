@@ -54,6 +54,16 @@
         <guid>http://localhost:1313/posts/%E5%BC%80%E5%8F%91%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%AC%E9%A3%8E%E9%97%B2%E8%AF%AD/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;欢迎体验我的个人小程序：&lt;strong&gt;听风闲语&lt;/strong&gt;。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/mindwind_minigram_code.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;听风闲语小程序&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;h2 id=&#34;听风闲语小程序介绍&#34;&gt;《听风闲语》小程序介绍
 &lt;/h2&gt;&lt;p&gt;目前小程序有两个基础模块：模拟人生 和 工具&lt;/p&gt;
 &lt;h3 id=&#34;模拟人生&#34;&gt;模拟人生
