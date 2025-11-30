@@ -6,7 +6,51 @@
         <description>Recent content in 技术 on Defiabell 的个人博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Sat, 02 Dec 2023 18:56:37 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/technology/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Nov 2025 22:33:04 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/technology/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>开发个人微信小程序</title>
+        <link>http://localhost:1313/posts/%E5%BC%80%E5%8F%91%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+        <pubDate>Tue, 25 Nov 2025 22:33:04 +0800</pubDate>
+        
+        <guid>http://localhost:1313/posts/%E5%BC%80%E5%8F%91%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;欢迎体验我的个人小程序：听风闲语。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;听风闲语小程序介绍&#34;&gt;《听风闲语》小程序介绍
+&lt;/h2&gt;&lt;p&gt;目前小程序有两个基础模块：模拟人生 和 工具&lt;/p&gt;
+&lt;h3 id=&#34;模拟人生&#34;&gt;模拟人生
+&lt;/h3&gt;&lt;p&gt;模拟人生 是一个用来记录自己生活的小工具，记录自己这一天干了哪些有意义的事以及哪些无意义的事，并给一个维度数值量化，这样一段时间后就能看到自己各个维度的数值信息。&lt;/p&gt;
+&lt;p&gt;例如 每天跑步，我可以每天记录 +1 健康，一周后我的健康值会变成 7。&lt;/p&gt;
+&lt;p&gt;然后还有智力；家庭等维度，也可以自己添加想要记录的维度。&lt;/p&gt;
+&lt;p&gt;做这个是因为感觉自己越来越躺平，越来越颓废，浪费了大好青春还搞的身体也越来越差。通过量化的指标提醒自己要努力要上进。&lt;/p&gt;
+&lt;p&gt;另一方面把记录当游戏，每个人都是自己世界的主角，主角人生的方向完全由自己控制。我们玩游戏时会让主角东奔西走完成各种任务，学习各种技能，没日没夜的修炼，咋自己成为主角时就各种躺平呢。&lt;/p&gt;
+&lt;h3 id=&#34;工具&#34;&gt;工具
+&lt;/h3&gt;&lt;p&gt;这里放我自己想要的功能。例如本博客网站链接。&lt;/p&gt;
+&lt;p&gt;还有一个 Hacker News 页面，用来关注最新的 hacker 新闻，不过拉取到的数据有点简单，实用性不是很高。&lt;/p&gt;
+&lt;h2 id=&#34;小程序开发动机&#34;&gt;小程序开发动机
+&lt;/h2&gt;&lt;p&gt;一直想做一个小程序，把自己想要的功能工具都放上去。&lt;/p&gt;
+&lt;p&gt;作为一个程序员，那种能自己掌控的感觉是很爽的。我完全可以按照自己的喜好开发，如果能有志同道合的人也喜欢那自然更好。&lt;/p&gt;
+&lt;p&gt;因为工作下班后就想躺平，苦于没精力探索新技术栈，所以计划一直在搁浅。&lt;/p&gt;
+&lt;p&gt;现在有了各种好用的 AI Agent，技术栈不再是最大的门槛。&lt;/p&gt;
+&lt;h2 id=&#34;一小时完成第一版小程序开发&#34;&gt;一小时完成第一版小程序开发
+&lt;/h2&gt;&lt;p&gt;小程序使用免费账号的 Cursor 进行开发，用时1h。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;注册小程序账号（这个是我提前注册过的）&lt;/li&gt;
+&lt;li&gt;下载&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;微信开发者工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;随便找个模板创建项目&lt;/li&gt;
+&lt;li&gt;创建一个 README.md 文档，描述小程序的菜单结构&lt;/li&gt;
+&lt;li&gt;根绝 md 文档让 cursor 生成代码，这时小程序就能体验了&lt;/li&gt;
+&lt;li&gt;使用云函数和数据库接入真实数据（代码让 cursor 生成，数据库在&amp;rsquo;开发者工具上&amp;rsquo;手动操作）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;最难的开发部分变得简单，剩下的就是微信认证，上传审核发布，这些都可以在页面上进行操作。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;其中微信认证有点坑，每年都要审核，每次审核需要交 30¥ 审核费，还不保证能审核通过。企业审核每次 300¥。&lt;/li&gt;
+&lt;li&gt;还有使用微信云服务也需要交钱，基础版每个月 19.9¥。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;剩余功能 开发中&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>搭建个人博客</title>
         <link>http://localhost:1313/posts/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Sat, 02 Dec 2023 18:56:37 +0800</pubDate>

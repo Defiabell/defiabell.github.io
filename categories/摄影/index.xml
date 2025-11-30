@@ -19,6 +19,11 @@
         &lt;h3&gt;国子监照片集&lt;/h3&gt;
     &lt;div class=&#34;swiper swiper-gallery-instance&#34;&gt;
                 &lt;div class=&#34;swiper-wrapper&#34;&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
+                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_4912-1.jpg&#34; alt=&#34;guozijian/DSC_4912-1.jpg&#34; /&gt;
+                            
+                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4912-1.jpg&lt;/div&gt;
+                            
+                        &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
                             &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_4932.jpg&#34; alt=&#34;guozijian/DSC_4932.jpg&#34; /&gt;
                             
                                 &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4932.jpg&lt;/div&gt;
@@ -29,39 +34,29 @@
                                 &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4960.jpg&lt;/div&gt;
                             
                         &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
-                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_4968.jpg&#34; alt=&#34;guozijian/DSC_4968.jpg&#34; /&gt;
-                            
-                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4968.jpg&lt;/div&gt;
-                            
-                        &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
-                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_4971.jpg&#34; alt=&#34;guozijian/DSC_4971.jpg&#34; /&gt;
-                            
-                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4971.jpg&lt;/div&gt;
-                            
-                        &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
                             &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_4981.jpg&#34; alt=&#34;guozijian/DSC_4981.jpg&#34; /&gt;
                             
                                 &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4981.jpg&lt;/div&gt;
                             
                         &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
-                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_4982.jpg&#34; alt=&#34;guozijian/DSC_4982.jpg&#34; /&gt;
+                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_4988-1.jpg&#34; alt=&#34;guozijian/DSC_4988-1.jpg&#34; /&gt;
                             
-                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4982.jpg&lt;/div&gt;
-                            
-                        &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
-                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_4995.jpg&#34; alt=&#34;guozijian/DSC_4995.jpg&#34; /&gt;
-                            
-                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4995.jpg&lt;/div&gt;
+                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4988-1.jpg&lt;/div&gt;
                             
                         &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
-                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_4998.jpg&#34; alt=&#34;guozijian/DSC_4998.jpg&#34; /&gt;
+                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_4989-1.jpg&#34; alt=&#34;guozijian/DSC_4989-1.jpg&#34; /&gt;
                             
-                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4998.jpg&lt;/div&gt;
+                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_4989-1.jpg&lt;/div&gt;
                             
                         &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
-                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_5012.jpg&#34; alt=&#34;guozijian/DSC_5012.jpg&#34; /&gt;
+                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_5001-1.jpg&#34; alt=&#34;guozijian/DSC_5001-1.jpg&#34; /&gt;
                             
-                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_5012.jpg&lt;/div&gt;
+                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_5001-1.jpg&lt;/div&gt;
+                            
+                        &lt;/div&gt;&lt;div class=&#34;swiper-slide&#34;&gt;
+                            &lt;img src=&#34;http://localhost:1313/portfolio/%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91/guozijian/DSC_5017-1.jpg&#34; alt=&#34;guozijian/DSC_5017-1.jpg&#34; /&gt;
+                            
+                                &lt;div class=&#34;swiper-caption&#34;&gt;guozijian/DSC_5017-1.jpg&lt;/div&gt;
                             
                         &lt;/div&gt;&lt;/div&gt;
                 &lt;div class=&#34;swiper-pagination&#34;&gt;&lt;/div&gt;

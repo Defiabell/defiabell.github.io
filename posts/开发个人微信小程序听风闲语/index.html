@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 欢迎体验我的个人小程序：听风闲语。\n《听风闲语》小程序介绍 目前小程序有两个基础模块：模拟人生 和 工具\n模拟人生 模拟人生 是一个用来记录自己生活的小工具，记录自己这一天干了哪些有意义的事以及哪些无意义的事，并给一个维度数值量化，这样一段时间后就能看到自己各个维度的数值信息。\n">
+<title>开发个人微信小程序《听风闲语》</title>
+
+<link rel='canonical' href='http://localhost:1313/posts/%E5%BC%80%E5%8F%91%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%AC%E9%A3%8E%E9%97%B2%E8%AF%AD/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="开发个人微信小程序《听风闲语》">
+<meta property='og:description' content=" 欢迎体验我的个人小程序：听风闲语。\n《听风闲语》小程序介绍 目前小程序有两个基础模块：模拟人生 和 工具\n模拟人生 模拟人生 是一个用来记录自己生活的小工具，记录自己这一天干了哪些有意义的事以及哪些无意义的事，并给一个维度数值量化，这样一段时间后就能看到自己各个维度的数值信息。\n">
+<meta property='og:url' content='http://localhost:1313/posts/%E5%BC%80%E5%8F%91%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%AC%E9%A3%8E%E9%97%B2%E8%AF%AD/'>
+<meta property='og:site_name' content='Defiabell 的个人博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='微信小程序' /><meta property='article:published_time' content='2025-11-25T22:33:04&#43;08:00'/><meta property='article:modified_time' content='2025-11-25T22:33:04&#43;08:00'/>
+<meta name="twitter:title" content="开发个人微信小程序《听风闲语》">
+<meta name="twitter:description" content=" 欢迎体验我的个人小程序：听风闲语。\n《听风闲语》小程序介绍 目前小程序有两个基础模块：模拟人生 和 工具\n模拟人生 模拟人生 是一个用来记录自己生活的小工具，记录自己这一天干了哪些有意义的事以及哪些无意义的事，并给一个维度数值量化，这样一段时间后就能看到自己各个维度的数值信息。\n"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/sanya1_hu_59e8863f8ca0e708.jpg" width="300"
+                            height="450" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">📝</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Defiabell 的个人博客</a></h1>
+            <h2 class="site-description">reading talking</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                <span>首页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/posts/' >
+                
+                
+                
+                <span>文章</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/portfolio/' >
+                
+                
+                
+                <span>摄影集</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#听风闲语小程序介绍">《听风闲语》小程序介绍</a>
+      <ul>
+        <li><a href="#模拟人生">模拟人生</a></li>
+        <li><a href="#工具">工具</a></li>
+      </ul>
+    </li>
+    <li><a href="#小程序开发动机">小程序开发动机</a></li>
+    <li><a href="#一小时完成第一版小程序开发">一小时完成第一版小程序开发</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" >
+                技术，微信小程序
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/%E5%BC%80%E5%8F%91%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%AC%E9%A3%8E%E9%97%B2%E8%AF%AD/">开发个人微信小程序《听风闲语》</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-11-25</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <blockquote>
+<p>欢迎体验我的个人小程序：<strong>听风闲语</strong>。</p></blockquote>
+<h2 id="听风闲语小程序介绍">《听风闲语》小程序介绍
+</h2><p>目前小程序有两个基础模块：模拟人生 和 工具</p>
+<h3 id="模拟人生">模拟人生
+</h3><p>模拟人生 是一个用来记录自己生活的小工具，记录自己这一天干了哪些有意义的事以及哪些无意义的事，并给一个维度数值量化，这样一段时间后就能看到自己各个维度的数值信息。</p>
+<p>例如 每天跑步，我可以每天记录 +1 健康，一周后我的健康值会变成 7。</p>
+<p>然后还有智力；家庭等维度，也可以自己添加想要记录的维度。</p>
+<p>做这个是因为感觉自己越来越躺平，越来越颓废，浪费了大好青春还搞的身体也越来越差。通过量化的指标提醒自己要努力要上进。</p>
+<p>另一方面把记录当游戏，每个人都是自己世界的主角，主角人生的方向完全由自己控制。我们玩游戏时会让主角东奔西走完成各种任务，学习各种技能，没日没夜的修炼，咋自己成为主角时就各种躺平呢。</p>
+<h3 id="工具">工具
+</h3><p>这里放我自己想要的功能。例如本博客网站链接。</p>
+<p>还有一个 Hacker News 页面，用来关注最新的 hacker 新闻，不过拉取到的数据有点简单，实用性不是很高。</p>
+<h2 id="小程序开发动机">小程序开发动机
+</h2><p>一直想做一个小程序，把自己想要的功能工具都放上去。</p>
+<p>作为一个程序员，那种能自己掌控的感觉是很爽的。我完全可以按照自己的喜好开发，如果能有志同道合的人也喜欢那自然更好。</p>
+<p>因为工作下班后就想躺平，苦于没精力探索新技术栈，所以计划一直在搁浅。</p>
+<p>现在有了各种好用的 AI Agent，技术栈不再是最大的门槛。</p>
+<h2 id="一小时完成第一版小程序开发">一小时完成第一版小程序开发
+</h2><p>小程序使用免费账号的 Cursor 进行开发，用时1h。</p>
+<ol>
+<li>注册小程序账号（这个是我提前注册过的）</li>
+<li>下载<a class="link" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html"  target="_blank" rel="noopener"
+    >微信开发者工具</a></li>
+<li>随便找个模板创建项目</li>
+<li>创建一个 README.md 文档，描述小程序的菜单结构</li>
+<li>根绝 md 文档让 cursor 生成代码，这时小程序就能体验了</li>
+<li>使用云函数和数据库接入真实数据（代码让 cursor 生成，数据库在&rsquo;开发者工具上&rsquo;手动操作）</li>
+</ol>
+<p>最难的开发部分变得简单，剩下的就是微信认证，上传审核发布，这些都可以在页面上进行操作。</p>
+<ul>
+<li>其中微信认证有点坑，每年都要审核，每次审核需要交 30¥ 审核费，还不保证能审核通过。企业审核每次 300¥。</li>
+<li>还有使用微信云服务也需要交钱，基础版每个月 19.9¥。</li>
+</ul>
+<hr>
+<p>剩余功能 开发中</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2022 - 
+        
+        2025 Defiabell 的个人博客
+    </section>
+    
+    <section class="powerby">
+        
+            © Defiabell <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <style>
+             
+            .swiper-gallery-container {
+                margin-bottom: 20px;
+            }
+            .swiper {
+                width: 100%;
+                height: 500px;  
+            }
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;  
+            }
+            .swiper-caption {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 5px 0;
+                text-align: center;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var swiperContainers = document.querySelectorAll('.swiper-gallery-instance');
+                swiperContainers.forEach(function(container, index) {
+                    new Swiper(container, {
+                        loop: true,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: container.querySelector('.swiper-pagination'),
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: container.querySelector('.swiper-button-next'),
+                            prevEl: container.querySelector('.swiper-button-prev'),
+                        },
+                        scrollbar: {
+                            el: container.querySelector('.swiper-scrollbar'),
+                        },
+                    });
+                });
+            });
+        </script>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.e7a71d9b30a2fac9760a07815ece11069f5bb9af3640f628232ca421357d9c49.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
