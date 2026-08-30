@@ -12,8 +12,44 @@
         apply();
         document.addEventListener('astro:after-swap', apply);
       })();
-    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.6Spq5I16.js"></script><style>.page-md[data-astro-cid-ecyruban]{max-width:760px;padding:56px 0 24px}.seal-row[data-astro-cid-ecyruban]{align-items:center;gap:20px;margin-bottom:40px;display:flex}.seal-row[data-astro-cid-ecyruban] h1[data-astro-cid-ecyruban]{font-family:var(--kai);letter-spacing:.25em;font-size:1.9rem}.seal[data-astro-cid-ecyruban]{background:var(--seal);color:#f5efe2;width:52px;height:52px;font-family:var(--kai);text-align:center;writing-mode:vertical-rl;user-select:none;border-radius:6px;place-items:center;padding:5px;font-size:1.05rem;line-height:1.2;display:grid;transform:rotate(-3deg);box-shadow:0 2px #0000001f}
-</style><link rel="stylesheet" href="/_astro/Base.CT3O1JRe.css"></head><body><div class="page"><nav class="top"><a class="brand" href="/">听风闲语</a><div class="top-links"><a href="/posts/">文章</a><a href="/portfolio/">摄影集</a><a href="/links/" class="hide-sm">友链</a><a href="/search/" class="sm-only">搜索</a><a href="/about/">关于</a><div class="nav-search" id="navSearch" data-astro-cid-a4hoc5nn><input type="search" id="navSearchInput" class="search-input nav-search-input" placeholder="搜索…" autocomplete="off" aria-label="站内搜索" data-astro-cid-a4hoc5nn><div class="entries results nav-search-panel" id="navSearchPanel" hidden aria-live="polite" data-astro-cid-a4hoc5nn></div></div><script type="module" src="/_astro/NavSearch.astro_astro_type_script_index_0_lang.CCnF_WnU.js"></script><button class="moon-toggle" id="moonToggle" aria-label="切换日夜模式" title="日 / 夜"><span class="disc"></span></button><script type="module">function e(){let e=document.getElementById(`moonToggle`);!e||e.dataset.bound||(e.dataset.bound=`1`,e.addEventListener(`click`,()=>{let e=document.documentElement;e.dataset.mode=e.dataset.mode===`night`?`day`:`night`,localStorage.setItem(`fengMode`,e.dataset.mode)}))}e(),document.addEventListener(`astro:page-load`,e);</script></div></nav><article class="page-md" data-astro-cid-ecyruban><div class="seal-row reveal" data-astro-cid-ecyruban><div class="seal" aria-hidden="true" data-astro-cid-ecyruban>闲语</div><h1 data-astro-cid-ecyruban>友链</h1></div><div class="prose reveal" data-astro-cid-ecyruban><ul>
+    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.6Spq5I16.js"></script><!--
+      字体延后到 load 之后再生效。
+
+      背景（实测，非推测）：@fontsource 的中文字体按 unicode-range 切片，
+      三个字重共 407 条 @font-face 规则，单页实际拉取约 30 个分片、每个
+      80–100KB。单独 curl 任意一个都是 200 / 0.8 秒，但 30 个并发会互相饿死，
+      最慢的要 26 秒。实测拦掉全部字体请求后 load 在 90ms 触发，不拦则 90 秒
+      都不触发、readyState 停在 interactive。
+
+      后果不止是慢：Cloudflare Web Analytics 的 beacon 在 load 之后才上报，
+      load 永不触发 → 博客一条访问数据都收不到（对照组 shiling load 2.0s、
+      mythmesh 12.3s，两者 beacon 均正常回 204）。
+
+      做法：media="print" 让浏览器下载 CSS 但不应用（不应用就不会触发字体请求），
+      等 load 之后再切成 all。代价是首次访问有一次 FOUT：先用回退字体渲染，
+      字体到位后换过来。回访命中缓存，几乎无感。
+    --><link rel="stylesheet" href="/_astro/400.CSN8f_ph.css" media="print" data-font-css><link rel="stylesheet" href="/_astro/600.Bbc2KnrV.css" media="print" data-font-css><link rel="stylesheet" href="/_astro/900.BRNRxbdd.css" media="print" data-font-css><link rel="stylesheet" href="/_astro/400.BePM_6Wn.css" media="print" data-font-css><link rel="stylesheet" href="/_astro/400.Dq_4PcIe.css" media="print" data-font-css><link rel="stylesheet" href="/_astro/500.BXUL_Jz2.css" media="print" data-font-css><noscript><link rel="stylesheet" href="/_astro/400.CSN8f_ph.css"><link rel="stylesheet" href="/_astro/600.Bbc2KnrV.css"><link rel="stylesheet" href="/_astro/900.BRNRxbdd.css"><link rel="stylesheet" href="/_astro/400.BePM_6Wn.css"><link rel="stylesheet" href="/_astro/400.Dq_4PcIe.css"><link rel="stylesheet" href="/_astro/500.BXUL_Jz2.css"></noscript><script>
+      (function () {
+        function applyFonts() {
+          window.__fontsApplied = true;
+          document.querySelectorAll('link[data-font-css]').forEach(function (l) {
+            l.media = 'all';
+          });
+        }
+        if (document.readyState === 'complete') {
+          applyFonts();
+        } else {
+          window.addEventListener('load', applyFonts, { once: true });
+        }
+        // ClientRouter 换页后 head 会被重建，新的 <link> 又是 media="print"，
+        // 而 SPA 导航不会再触发 load。首屏那次真正 load 之后 __fontsApplied 为真，
+        // 此后每次换页立即应用（此时字体已在缓存里，不会再阻塞任何东西）。
+        document.addEventListener('astro:page-load', function () {
+          if (window.__fontsApplied) applyFonts();
+        });
+      })();
+    </script><style>.page-md[data-astro-cid-ecyruban]{max-width:760px;padding:56px 0 24px}.seal-row[data-astro-cid-ecyruban]{align-items:center;gap:20px;margin-bottom:40px;display:flex}.seal-row[data-astro-cid-ecyruban] h1[data-astro-cid-ecyruban]{font-family:var(--kai);letter-spacing:.25em;font-size:1.9rem}.seal[data-astro-cid-ecyruban]{background:var(--seal);color:#f5efe2;width:52px;height:52px;font-family:var(--kai);text-align:center;writing-mode:vertical-rl;user-select:none;border-radius:6px;place-items:center;padding:5px;font-size:1.05rem;line-height:1.2;display:grid;transform:rotate(-3deg);box-shadow:0 2px #0000001f}
+</style><link rel="stylesheet" href="/_astro/Base.BKQ1Ry20.css"></head><body><div class="page"><nav class="top"><a class="brand" href="/">听风闲语</a><div class="top-links"><a href="/posts/">文章</a><a href="/portfolio/">摄影集</a><a href="/links/" class="hide-sm">友链</a><a href="/search/" class="sm-only">搜索</a><a href="/about/">关于</a><div class="nav-search" id="navSearch" data-astro-cid-a4hoc5nn><input type="search" id="navSearchInput" class="search-input nav-search-input" placeholder="搜索…" autocomplete="off" aria-label="站内搜索" data-astro-cid-a4hoc5nn><div class="entries results nav-search-panel" id="navSearchPanel" hidden aria-live="polite" data-astro-cid-a4hoc5nn></div></div><script type="module" src="/_astro/NavSearch.astro_astro_type_script_index_0_lang.CCnF_WnU.js"></script><button class="moon-toggle" id="moonToggle" aria-label="切换日夜模式" title="日 / 夜"><span class="disc"></span></button><script type="module">function e(){let e=document.getElementById(`moonToggle`);!e||e.dataset.bound||(e.dataset.bound=`1`,e.addEventListener(`click`,()=>{let e=document.documentElement;e.dataset.mode=e.dataset.mode===`night`?`day`:`night`,localStorage.setItem(`fengMode`,e.dataset.mode)}))}e(),document.addEventListener(`astro:page-load`,e);</script></div></nav><article class="page-md" data-astro-cid-ecyruban><div class="seal-row reveal" data-astro-cid-ecyruban><div class="seal" aria-hidden="true" data-astro-cid-ecyruban>闲语</div><h1 data-astro-cid-ecyruban>友链</h1></div><div class="prose reveal" data-astro-cid-ecyruban><ul>
 <li><a href="https://ma-yidong.com/about/">maajor | Ma Yidong</a></li>
 <li><a href="https://rexwang.cc/">Rex Wang</a></li>
 </ul>
