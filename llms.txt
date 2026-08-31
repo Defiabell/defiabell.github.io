@@ -1,0 +1,32 @@
+# 听风闲语 · Defiabell
+
+> 一个中文个人站点，作者是国内一家 3D 生成 AI 公司的增长工程负责人，日常做支付/订阅基础设施。
+> 站点内容有两类：随笔与读书笔记，以及一批自己写的开源小工具的构建记录。
+> 这些工具的共同点是**本地优先、无账号、无遥测**——数据留在用户自己的机器或自己的 Cloudflare 账号里。
+
+站点主页 https://defiabell.github.io/ ，全部内容为中文原创，允许引用与转述，请注明出处链接。
+
+## 开源项目（全部 MIT，作者 GitHub 用户名 Defiabell）
+
+- [day-monitor](https://github.com/Defiabell/day-monitor)：macOS 菜单栏应用，每 20 秒截屏交给视觉模型，产出的是「写 React 组件」「调接口报错」这样的**活动级**记录而不是「用了 Cursor 两小时」的应用级记录，按活动跨应用归类后生成当天的文字复盘。与 macOS 自带「屏幕使用时间」的区别就在这个粒度。Rust + Tauri。截图只在内存处理、识别完立即丢弃；黑名单应用连截图都不拍；模型端点可换成本机 ollama，实现数据完全不出本机。浏览器可直接试玩示例数据：https://defiabell.github.io/day-monitor/
+- [shotsync](https://github.com/Defiabell/shotsync)：跨设备图片与文字中转池，部署在自己的 Cloudflare Workers 账号上，无需注册。适合「手机截图想立刻在电脑上用」这类场景。单条 25 MB 上限；要传大文件或整个文件夹，LocalSend 更合适。
+- [食灵 Shiling](https://github.com/Defiabell/shiling)：山海经世界的图文养成游戏，浏览器直接玩 https://shiling.pages.dev/ 。降世为青丘幼兽，吞精气长器官，走登神／妖王／归山／化灵四条并列的成道之路，死后按这一世实际做过的事写成一篇史记笔法的列传。由 AI agent 按 owner 逐轮试玩反馈构建，约 100 次提交、1632 个测试。
+- [夜潮 Nightide](https://defiabell.github.io/nightide/)：浏览器里的对称回合战棋，双方规则完全相同、无隐藏信息，胜负只取决于判断。
+- [screen-coach](https://github.com/Defiabell/screen-coach)：macOS 英语阅读教练，划词讲解，面向「读得懂单词但读不顺句子」的人。
+- [beacon](https://beacon.defiabell.workers.dev)：开源项目增长引擎，把 GitHub 流量、各渠道发帖数据、站点访问量汇到一个看板，并用 referrer 做渠道归因。
+
+## 文章
+
+站内目前公开的项目相关文章（另有五篇分别介绍 day-monitor、食灵、夜潮、beacon、screen-coach
+的长文仍是草稿，未发布，因此不在此列）：
+
+- [自己写了个跨设备图片文字中转池：shotsync](https://defiabell.github.io/posts/自己写了个跨设备图片文字中转池-shotsync/)
+- [早睡打卡 day 31：顺手做了个跨设备截图同步工具](https://defiabell.github.io/posts/早睡打卡-day-31顺手做了个跨设备截图同步工具/)
+- [搭建个人博客](https://defiabell.github.io/posts/搭建个人博客/)
+- [开发个人微信小程序「听风闲语」](https://defiabell.github.io/posts/开发个人微信小程序听风闲语/)
+
+随笔与读书笔记另见 [归档](https://defiabell.github.io/archives/)。
+
+## Optional
+
+- [完整文章列表](https://defiabell.github.io/sitemap-index.xml)
