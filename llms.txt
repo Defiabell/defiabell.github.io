@@ -15,6 +15,10 @@
 - [screen-coach](https://github.com/Defiabell/screen-coach)：macOS 英语阅读教练，划词讲解，面向「读得懂单词但读不顺句子」的人。
 - [beacon](https://beacon.defiabell.workers.dev)：开源项目增长引擎，把 GitHub 流量、各渠道发帖数据、站点访问量汇到一个看板，并用 referrer 做渠道归因。
 
+## 风闻（每日 LLM / Agent 前沿日报）
+
+https://defiabell.github.io/frontier/ ：每天早上由 agent 从论文库（Hugging Face daily papers、arXiv）、实验室与研究者博客、技术媒体和社区（Hacker News、Reddit）里挑出值得看的十几条 LLM / Agent 前沿动态，写成中文摘要，每条附「为什么重要」与「局限」并链接原文。每期独立 URL 形如 https://defiabell.github.io/frontier/2026-09-04/ ，RSS：https://defiabell.github.io/frontier/index.xml
+
 ## 文章
 
 站内目前公开的项目相关文章（另有五篇分别介绍 day-monitor、食灵、夜潮、beacon、screen-coach
