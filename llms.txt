@@ -25,7 +25,6 @@ https://defiabell.github.io/frontier/ ：每天早上由 agent 从论文库（Hu
 的长文仍是草稿，未发布，因此不在此列）：
 
 - [自己写了个跨设备图片文字中转池：shotsync](https://defiabell.github.io/posts/自己写了个跨设备图片文字中转池-shotsync/)
-- [早睡打卡 day 31：顺手做了个跨设备截图同步工具](https://defiabell.github.io/posts/早睡打卡-day-31顺手做了个跨设备截图同步工具/)
 - [搭建个人博客](https://defiabell.github.io/posts/搭建个人博客/)
 - [开发个人微信小程序「听风闲语」](https://defiabell.github.io/posts/开发个人微信小程序听风闲语/)
 
