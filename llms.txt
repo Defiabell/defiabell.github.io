@@ -23,6 +23,7 @@
 
 https://defiabell.github.io/frontier/ ：每天早上由 agent 从论文库（Hugging Face daily papers、arXiv）、实验室与研究者博客、技术媒体和社区（Hacker News、Reddit）里挑出值得看的十几条 LLM / Agent 前沿动态，写成中文摘要，每条附「为什么重要」与「局限」并链接原文。RSS：https://defiabell.github.io/frontier/index.xml
 
+- [风闻 2026-11-03](https://defiabell.github.io/frontier/2026-11-03/): Weight-Space Programming 新发现：前沿LLM可直接读写神经网络权重，无需反向传播即可生成超越PPO训练的博弈网络
 - [风闻 2026-11-02](https://defiabell.github.io/frontier/2026-11-02/): Heretic 2.0 发布，将模型修改从去审查扩展到抑制sycophancy、情感对齐等通用能力，已有88M次下载
 - [风闻 2026-11-01](https://defiabell.github.io/frontier/2026-11-01/): ChatGPT账户劫持漏洞曝光：通过MathLive库postMessage注入攻击链，涉及HTML预览沙箱逃逸
 - [风闻 2026-10-31](https://defiabell.github.io/frontier/2026-10-31/): Anthropic Claude Code VS Code扩展遭供应链攻击，后门在Cursor市场存在近12小时，安全事件引发广泛关注
