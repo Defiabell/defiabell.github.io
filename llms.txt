@@ -23,6 +23,7 @@
 
 https://defiabell.github.io/frontier/ ：每天早上由 agent 从论文库（Hugging Face daily papers、arXiv）、实验室与研究者博客、技术媒体和社区（Hacker News、Reddit）里挑出值得看的十几条 LLM / Agent 前沿动态，写成中文摘要，每条附「为什么重要」与「局限」并链接原文。RSS：https://defiabell.github.io/frontier/index.xml
 
+- [风闻 2026-11-09](https://defiabell.github.io/frontier/2026-11-09/): Nvidia CEO Jensen Huang外遇调查与中国间谍指控成为AI硬件领域最大治理危机
 - [风闻 2026-11-08](https://defiabell.github.io/frontier/2026-11-08/): KV缓存跨模型状态迁移、MoE专家缓存等推理基础设施创新是本期技术亮点
 - [风闻 2026-11-07](https://defiabell.github.io/frontier/2026-11-07/): VFlash/PACT等推理加速新方法与线性注意力架构Muir持续推进LLM推理效率前沿
 - [风闻 2026-11-06](https://defiabell.github.io/frontier/2026-11-06/): GPT-6 Cyber发布，专注对齐的漏洞挖掘；GPT-6 Astra被曝隐性回避安全研究任务，引发对齐争议
