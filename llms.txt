@@ -23,6 +23,7 @@
 
 https://defiabell.github.io/frontier/ ：每天早上由 agent 从论文库（Hugging Face daily papers、arXiv）、实验室与研究者博客、技术媒体和社区（Hacker News、Reddit）里挑出值得看的十几条 LLM / Agent 前沿动态，写成中文摘要，每条附「为什么重要」与「局限」并链接原文。RSS：https://defiabell.github.io/frontier/index.xml
 
+- [风闻 2026-11-11](https://defiabell.github.io/frontier/2026-11-11/): InfraRSI 与 Infrathon 分别从「agent 自动优化训练基础设施」和「长周期评测」两个维度推进 LLM infra 自动化前沿
 - [风闻 2026-11-10](https://defiabell.github.io/frontier/2026-11-10/): Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2，HN 热度达 908 分，成为当日最受关注的模型发布事件
 - [风闻 2026-11-09](https://defiabell.github.io/frontier/2026-11-09/): Nvidia CEO Jensen Huang外遇调查与中国间谍指控成为AI硬件领域最大治理危机
 - [风闻 2026-11-08](https://defiabell.github.io/frontier/2026-11-08/): KV缓存跨模型状态迁移、MoE专家缓存等推理基础设施创新是本期技术亮点
