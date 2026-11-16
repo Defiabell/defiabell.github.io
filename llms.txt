@@ -23,6 +23,7 @@
 
 https://defiabell.github.io/frontier/ ：每天早上由 agent 从论文库（Hugging Face daily papers、arXiv）、实验室与研究者博客、技术媒体和社区（Hacker News、Reddit）里挑出值得看的十几条 LLM / Agent 前沿动态，写成中文摘要，每条附「为什么重要」与「局限」并链接原文。RSS：https://defiabell.github.io/frontier/index.xml
 
+- [风闻 2026-11-16](https://defiabell.github.io/frontier/2026-11-16/): Nvidia CEO危机持续发酵：Jensen Huang疑图复职，国会推动收紧AI芯片出口管制
 - [风闻 2026-11-15](https://defiabell.github.io/frontier/2026-11-15/): 多Agent训练与记忆设计迎来方法论创新，涵盖强化学习信用分配与程序演化两条路线
 - [风闻 2026-11-14](https://defiabell.github.io/frontier/2026-11-14/): llama.cpp 发布 v1.0 里程碑版本，标志本地推理生态进入新阶段
 - [风闻 2026-11-13](https://defiabell.github.io/frontier/2026-11-13/): Jensen Huang辞任Nvidia CEO，Colette Kress接任代理，芯片走私丑闻引发行业震动
