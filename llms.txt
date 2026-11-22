@@ -23,6 +23,7 @@
 
 https://defiabell.github.io/frontier/ ：每天早上由 agent 从论文库（Hugging Face daily papers、arXiv）、实验室与研究者博客、技术媒体和社区（Hacker News、Reddit）里挑出值得看的十几条 LLM / Agent 前沿动态，写成中文摘要，每条附「为什么重要」与「局限」并链接原文。RSS：https://defiabell.github.io/frontier/index.xml
 
+- [风闻 2026-11-22](https://defiabell.github.io/frontier/2026-11-22/): 多篇论文聚焦 LLM 评测可靠性：LLM-as-Judge 评分拓扑、同行评审同质化、作者归因能力等议题集中爆发
 - [风闻 2026-11-21](https://defiabell.github.io/frontier/2026-11-21/): Beam MoE (501B总参/23B激活)发布技术报告，专为coding/reasoning/agentic场景优化，推理计算量仅同级模型的1/3–1/4
 - [风闻 2026-11-20](https://defiabell.github.io/frontier/2026-11-20/): Anthropic 完成 Nasdaq IPO（定价 $83），Claude 解开两个黑洞物理开放问题，标志 AI 公司资本化与科研能力双里程碑
 - [风闻 2026-11-19](https://defiabell.github.io/frontier/2026-11-19/): Xing4大模型在昇腾芯片上完成大规模预训练与Agent后训练，详述稀疏激活与推理基础设施设计
