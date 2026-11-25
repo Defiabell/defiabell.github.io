@@ -23,6 +23,7 @@
 
 https://defiabell.github.io/frontier/ ：每天早上由 agent 从论文库（Hugging Face daily papers、arXiv）、实验室与研究者博客、技术媒体和社区（Hacker News、Reddit）里挑出值得看的十几条 LLM / Agent 前沿动态，写成中文摘要，每条附「为什么重要」与「局限」并链接原文。RSS：https://defiabell.github.io/frontier/index.xml
 
+- [风闻 2026-11-25](https://defiabell.github.io/frontier/2026-11-25/): Anthropic多事之秋：IPO破发、员工言论风波、模型蒸馏指控引爆社区热议
 - [风闻 2026-11-24](https://defiabell.github.io/frontier/2026-11-24/): Loop Transformer 架构出现两款落地产品（GLM-5.4 与 Inkling 2 Mini），权重共享+多次迭代成新趋势
 - [风闻 2026-11-23](https://defiabell.github.io/frontier/2026-11-23/): OpenAI 发布「困惑度与智能」深度文章，探讨 perplexity 作为模型能力统一评测指标的潜力
 - [风闻 2026-11-22](https://defiabell.github.io/frontier/2026-11-22/): 多篇论文聚焦 LLM 评测可靠性：LLM-as-Judge 评分拓扑、同行评审同质化、作者归因能力等议题集中爆发
