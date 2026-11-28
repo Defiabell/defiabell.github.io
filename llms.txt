@@ -23,6 +23,7 @@
 
 https://defiabell.github.io/frontier/ ：每天早上由 agent 从论文库（Hugging Face daily papers、arXiv）、实验室与研究者博客、技术媒体和社区（Hacker News、Reddit）里挑出值得看的十几条 LLM / Agent 前沿动态，写成中文摘要，每条附「为什么重要」与「局限」并链接原文。RSS：https://defiabell.github.io/frontier/index.xml
 
+- [风闻 2026-11-28](https://defiabell.github.io/frontier/2026-11-28/): Yandex 发布 80B/3B-active MoE 基础模型 AliceAI，采用 Kimi Delta Attention 等新机制，Apache 2.0 开源
 - [风闻 2026-11-27](https://defiabell.github.io/frontier/2026-11-27/): Mixture-of-Loops Transformer 和 DFly2 分别从架构与推理层面提升 LLM 预训练效率和长上下文投机解码速度
 - [风闻 2026-11-26](https://defiabell.github.io/frontier/2026-11-26/): OpenAI 数学团队连续发布矩阵乘法指数 ω=9/4 与多项式 Hirsch 猜想反例两篇重磅预印本，AI 辅助数学证明进入新纪元
 - [风闻 2026-11-25](https://defiabell.github.io/frontier/2026-11-25/): Anthropic多事之秋：IPO破发、员工言论风波、模型蒸馏指控引爆社区热议
